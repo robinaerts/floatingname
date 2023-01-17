@@ -8,11 +8,11 @@ const canvas = document.querySelector(".webgl");
 const loadingManager = new THREE.LoadingManager();
 const textureLoader = new THREE.TextureLoader(loadingManager);
 
-const matcapTexture = textureLoader.load("/textures/matcaps/2.png");
-const matcapTexture2 = textureLoader.load("/textures/matcaps/1.png");
+const matcapTexture = textureLoader.load("textures/matcaps/2.png");
+const matcapTexture2 = textureLoader.load("textures/matcaps/1.png");
 
 const fontLoader = new THREE.FontLoader(); // Only loads .json fonts
-fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
+fontLoader.load("fonts/helvetiker_regular.typeface.json", (font) => {
   const textGeometry = new THREE.TextBufferGeometry("Robin", {
     font: font,
     size: 0.5,
